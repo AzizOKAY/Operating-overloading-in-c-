@@ -1,0 +1,78 @@
+mov #0, 30      ; load 30 to memory addres 0
+mov #1, 23      ; load 23 to memory addres 1
+mov #2, 4       ; load 4 to memory addres 2
+mov #3, 56      ; load 56 to memory addres 3
+mov #4, 34      ; load 34 to memory addres 4
+mov #5, 56      ; load 56 to memory addres 5
+mov #6, 89      ; load 89 to memory addres 6
+mov #7, 32      ; load 32 to memory addres 0
+mov #8, 45      ; load 45 to memory addres 7
+mov #9, 25      ; load 25 to memory addres 8
+mov r5, 100     ; load 100 to register 5
+sub r5, 1       ; decrement R5
+jpn r5, 78      ; go line 78 if R5 <= 0
+mov #0, r1      ; move #0 to r1
+mov #1, r2      ; move memory address 1 to r2
+mov r1, r3      ; move r1 to r31
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 21      ; go line 21 if R3 <= 0
+mov r1, #1      ; move r1 to memory address 1
+mov r2, #0      ; move r2 to memory address 0
+mov #1, r1      ; move memory address 1 to r1
+mov #2, r2      ; move memory address r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 28      ; go line 21 if R3 <= 0
+mov r1, #2      ; move r1 to memory address 2
+mov r2, #1      ; move r2 to memory 1
+mov #2, r1      ; move memory address 2 to r1
+mov #3, r2      ; move memory address 3 to r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 35      ; go line 21 if R3 <= 0
+mov r1, #3      ; move r1 to r3
+mov r2, #2      ; move r2 memory addrss 2
+mov #3, r1      ; move memory address r1
+mov #4, r2      ; move momory address 4 r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 42      ; go line 21 if R3 <= 0
+mov r1, #4      ; move r1 ro memory address 4
+mov r2, #3      ; move r2 to memory address 3
+mov #4, r1      ; move memory address r1
+mov #5, r2      ; move memory address 5 to r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 49      ; go line 21 if R3 <= 0
+mov r1, #5      ; move r1 to memory address 5
+mov r2, #4      ; move r2 memory addrss 4
+mov #5, r1      ; move memory address 5 r1
+mov #6, r2      ; move memory address 6 to r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 56      ; go line 21 if R3 <= 0
+mov r1, #6      ; move R1 to memory address 6
+mov r2, #5      ; move R1 to memory address 5
+mov #6, r1      ; move memory address 6 to r1
+mov #7, r2      ; move memory address 7 to r2
+mov r1, r3      ; move R1 to memory address 7
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 63      ; go line 21 if R3 <= 0
+mov r1, #7      ; move R1 to memory address 7
+mov r2, #6      ; move R2 to memory address 8
+mov #7, r1      ; memory address 7 to r1
+mov #8, r2      ; memory address 8  to R2
+mov r1, r3      ; move R1 to R3 9
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 70      ; go line 21 if R3 <= 0
+mov r1, #8      ; move R1 to memory address 8
+mov r2, #7      ; move R2 to memory address 7
+mov #8, r1      ; move memory address 8 to r1
+mov #9, r2      ; move memory address 9 to r2
+mov r1, r3      ; move r1 to r3
+sub r3, r2      ; substrcat R2 to R3
+JPN r3, 77      ; go line 21 if R3 <= 0
+mov r1, #9      ; move R1 to memory address 9
+mov r2, #8      ; move R2 to memory address 8
+jmp 12          ; jump line 12
+hlt
