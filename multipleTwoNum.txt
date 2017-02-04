@@ -1,0 +1,11 @@
+MOV R1, 8     ; line 1, load value 8 to the register 1
+MOV R2, 12    ; line 2, load value 12 to the register 1
+MOV R1, R3    ; line 3, copies value R1 to the R3
+SUB R2, 1     ; line 4, decrement R1
+JPN R2, 10    ; line 7, if R1 is 0 then go to line 9
+ADD R1, R3    ; line 5, add content of R3 to R1
+SUB R2, 1     ; line 6, decrement R1
+JPN R2, 10    ; line 7, if R1 is 0 then go to line 9
+JMP 6         ; line 8, go to line 5
+PRN R1        ; line 9, print multiple result of two given number to screen
+HLT           ; finish the program
